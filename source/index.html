@@ -49,13 +49,15 @@
             Отличаются только заголовки (font-weight: bold; font-size: 21px;) и иногда цвет.
             Решил сразу сделать их модификаторами, если ещё будут какие-то варианты,
             то переделаю значения модификатору, типа text--heading--s / m / b etc. -->
-      <h1 class="main-heading text--heading">
-        Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
-      </h1>
-      <section class="advantages">
-        <p class="advantages__tesis">
+      <div class="main-heading">
+        <h1 class="main-heading__title text--heading">
+          Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="main-heading__tesis">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
+      </div>
+      <section class="advantages">
         <ul class="advantages__list">
           <!--  У .advantages__item с картинкой цвет текста белый.
                 Это правило будет у модификатора .advantages__item--with-picture -->
