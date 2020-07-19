@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__intro intro">
+        <div class="intro__text intro__text--full">
+          <img src="https://via.placeholder.com/282x114" width="282" height="114" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <!--  По задумке, здесь и далее видно, что у всего текста font-size: 18px; line-height: 26px.
+            Отличаются только заголовки (font-weight: bold; font-size: 21px;) и иногда цвет.
+            Решил сразу сделать их модификаторами, если ещё будут какие-то варианты,
+            то переделаю значения модификатору, типа text--heading--s / m / b etc. -->
+      <div class="main-heading">
+        <h1 class="main-heading__title main-heading__title--heading">
+          Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="main-heading__tesis">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+        </p>
+      </div>
+      <section class="advantages">
+        <ul class="advantages__list">
+          <!--  У .advantages__item с картинкой цвет текста белый.
+                Это правило будет у модификатора .advantages__item--with-picture -->
+          <li class="advantages__item advantages__item--with-picture advantages__item--with-sub-advantages">
+            <span class="advantages__number">&ndash; №1 &ndash;</span>
+            <h2 class="advantages__title advantages__title--heading">Настоящий городок</h2>
+            <p class="advantages__description"></p>
+            <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Вид города">
+            <ul class="advantages__sub-advantages sub-advantages">
+              <!--  Тут мне не нравится, что .sub-advantages в БЭМ у меня является
+                    элементом .advantages, для позиционирования, но в HTML является ребёнком
+                    элемента li,
+                    В HTML: section.advantages>ul.advantages__list>li.advantages__list-item>ul.sub-advantages;
+                    В БЭМ (плоское дерево): .advantages__sub-advantages для позиционирования,
+                                            .sub-advantages для оформления (цвет текста и прочее);
+                    который элемент .advantages в БЭМ. Элемента элемента быть не может.
+                    То есть задача позиционирования должна ложиться на родителя
+                    который в терминологии БЭМ является элементом, а не блоком. Соответственно позиционировать
+                    через родителя родителя это нормально? -->
+              <li class="sub-advantages__item sub-advantages__item--home">
+                <h3 class="sub-advantages__title sub-advantages__title--heading">Жилье</h3>
+                <p class="sub-advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="sub-advantages__item sub-advantages__item--gift">
+                <h3 class="sub-advantages__title sub-advantages__title--heading">Сувениры</h3>
+                <p class="sub-advantages__description">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="sub-advantages__item sub-advantages__item--food">
+                <h3 class="sub-advantages__title sub-advantages__title--heading">Еда</h3>
+                <p class="sub-advantages__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages__item advantages__item--with-picture">
+            <span class="advantages__number">&ndash; №2 &ndash;</span>
+            <h2 class="advantages__title advantages__title--heading">Там есть Мост Дьявола</h2>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Мост Дьявола">
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">&ndash; №3 &ndash;</span>
+            <h2 class="advantages__title advantages__title--heading">Небольшая площадь</h2>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">&ndash; №4 &ndash;</span>
+            <h2 class="advantages__title advantages__title--heading">Красивая дорога</h2>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__number">&ndash; №5 &ndash;</span>
+            <h2 class="advantages__title advantages__title--heading">Мало туристов</h2>
+            <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <b class="page-footer__hashtag">#visitsedona</b>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">
+              Twitter
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              YouTube
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      </div>
+    </footer>
 
   </body>
 </html>
