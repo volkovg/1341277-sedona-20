@@ -45,10 +45,6 @@
     </header>
 
     <main class="page-main">
-      <!--  По задумке, здесь и далее видно, что у всего текста font-size: 18px; line-height: 26px.
-            Отличаются только заголовки (font-weight: bold; font-size: 21px;) и иногда цвет.
-            Решил сразу сделать их модификаторами, если ещё будут какие-то варианты,
-            то переделаю значения модификатору, типа text--heading--s / m / b etc. -->
       <div class="main-heading">
         <h1 class="main-heading__title main-heading__title--heading">
           Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
@@ -59,24 +55,12 @@
       </div>
       <section class="advantages">
         <ul class="advantages__list">
-          <!--  У .advantages__item с картинкой цвет текста белый.
-                Это правило будет у модификатора .advantages__item--with-picture -->
           <li class="advantages__item advantages__item--with-picture advantages__item--with-sub-advantages">
             <span class="advantages__number">&ndash; №1 &ndash;</span>
             <h2 class="advantages__title advantages__title--heading">Настоящий городок</h2>
             <p class="advantages__description"></p>
             <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Вид города">
             <ul class="advantages__sub-advantages sub-advantages">
-              <!--  Тут мне не нравится, что .sub-advantages в БЭМ у меня является
-                    элементом .advantages, для позиционирования, но в HTML является ребёнком
-                    элемента li,
-                    В HTML: section.advantages>ul.advantages__list>li.advantages__list-item>ul.sub-advantages;
-                    В БЭМ (плоское дерево): .advantages__sub-advantages для позиционирования,
-                                            .sub-advantages для оформления (цвет текста и прочее);
-                    который элемент .advantages в БЭМ. Элемента элемента быть не может.
-                    То есть задача позиционирования должна ложиться на родителя
-                    который в терминологии БЭМ является элементом, а не блоком. Соответственно позиционировать
-                    через родителя родителя это нормально? -->
               <li class="sub-advantages__item sub-advantages__item--home">
                 <h3 class="sub-advantages__title sub-advantages__title--heading">Жилье</h3>
                 <p class="sub-advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
