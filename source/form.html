@@ -153,9 +153,14 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="form-feedback__fieldset"> <!-- textarea без label осталась, это нормально? -->
+      <fieldset class="form-feedback__fieldset">
         <legend class="form-feedback__legend">Опишите свои эмоции:</legend>
-        <textarea class="form-feedback__textarea" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+        <label class="form-feedback__field-textarea field-textarea">
+          <span class="visually-hidden">Ваши впечатления:</span>
+          <div class="field-textarea__input-wrap">
+            <textarea class="form-feedback__textarea" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+        </label>
       </fieldset>
       <button class="form-feedback__button button" type="submit">Отправить отзыв</button>
     </form>
