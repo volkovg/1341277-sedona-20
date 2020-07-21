@@ -45,74 +45,65 @@
     </header>
 
     <main class="page-main">
-      <!--  По задумке, здесь и далее видно, что у всего текста font-size: 18px; line-height: 26px.
-            Отличаются только заголовки (font-weight: bold; font-size: 21px;) и иногда цвет.
-            Решил сразу сделать их модификаторами, если ещё будут какие-то варианты,
-            то переделаю значения модификатору, типа text--heading--s / m / b etc. -->
       <div class="main-heading">
         <h1 class="main-heading__title main-heading__title--heading">
           Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
         </h1>
-        <p class="main-heading__tesis">
+        <p class="main-heading__description">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
       </div>
       <section class="advantages">
-        <ul class="advantages__list">
-          <!--  У .advantages__item с картинкой цвет текста белый.
-                Это правило будет у модификатора .advantages__item--with-picture -->
-          <li class="advantages__item advantages__item--with-picture advantages__item--with-sub-advantages">
-            <span class="advantages__number">&ndash; №1 &ndash;</span>
-            <h2 class="advantages__title advantages__title--heading">Настоящий городок</h2>
-            <p class="advantages__description"></p>
-            <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Вид города">
-            <ul class="advantages__sub-advantages sub-advantages">
-              <!--  Тут мне не нравится, что .sub-advantages в БЭМ у меня является
-                    элементом .advantages, для позиционирования, но в HTML является ребёнком
-                    элемента li,
-                    В HTML: section.advantages>ul.advantages__list>li.advantages__list-item>ul.sub-advantages;
-                    В БЭМ (плоское дерево): .advantages__sub-advantages для позиционирования,
-                                            .sub-advantages для оформления (цвет текста и прочее);
-                    который элемент .advantages в БЭМ. Элемента элемента быть не может.
-                    То есть задача позиционирования должна ложиться на родителя
-                    который в терминологии БЭМ является элементом, а не блоком. Соответственно позиционировать
-                    через родителя родителя это нормально? -->
-              <li class="sub-advantages__item sub-advantages__item--home">
-                <h3 class="sub-advantages__title sub-advantages__title--heading">Жилье</h3>
-                <p class="sub-advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="sub-advantages__item sub-advantages__item--gift">
-                <h3 class="sub-advantages__title sub-advantages__title--heading">Сувениры</h3>
-                <p class="sub-advantages__description">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="sub-advantages__item sub-advantages__item--food">
-                <h3 class="sub-advantages__title sub-advantages__title--heading">Еда</h3>
-                <p class="sub-advantages__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="advantages__item advantages__item--with-picture">
-            <span class="advantages__number">&ndash; №2 &ndash;</span>
-            <h2 class="advantages__title advantages__title--heading">Там есть Мост Дьявола</h2>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Мост Дьявола">
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">&ndash; №3 &ndash;</span>
-            <h2 class="advantages__title advantages__title--heading">Небольшая площадь</h2>
-            <p class="advantages__description">Все интересные места находятся очень близко</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">&ndash; №4 &ndash;</span>
-            <h2 class="advantages__title advantages__title--heading">Красивая дорога</h2>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__number">&ndash; №5 &ndash;</span>
-            <h2 class="advantages__title advantages__title--heading">Мало туристов</h2>
-            <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
-          </li>
-        </ul>
+        <div class="advantages__item advantages__item--with-picture">
+          <h2 class="advantages__title advantages__title--heading">Настоящий городок</h2>
+          <span class="advantages__number">&ndash; №1 &ndash;</span>
+          <p class="advantages__description"></p>
+          <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Вид города">
+        </div>
+        <div class="advice">
+          <div class="advice__item advice__item--home">
+            <h3 class="advice__title advice__title--heading">Жилье</h3>
+            <p class="advice__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="advice__item advice__item--gift">
+            <h3 class="advice__title advice__title--heading">Сувениры</h3>
+            <p class="advice__description">Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="advice__item advice__item--food">
+            <h3 class="advice__title advice__title--heading">Еда</h3>
+            <p class="advice__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </div>
+        </div>
+        <div class="advantages__item advantages__item--with-picture">
+          <h2 class="advantages__title advantages__title--heading">Там есть Мост Дьявола</h2>
+          <span class="advantages__number">&ndash; №2 &ndash;</span>
+          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Мост Дьявола">
+        </div>
+        <div class="advantages__item">
+          <h2 class="advantages__title advantages__title--heading">Небольшая площадь</h2>
+          <span class="advantages__number">&ndash; №3 &ndash;</span>
+          <p class="advantages__description">Все интересные места находятся очень близко</p>
+        </div>
+        <div class="advantages__item">
+          <h2 class="advantages__title advantages__title--heading">Красивая дорога</h2>
+          <span class="advantages__number">&ndash; №4 &ndash;</span>
+          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="advantages__item">
+          <h2 class="advantages__title advantages__title--heading">Мало туристов</h2>
+          <span class="advantages__number">&ndash; №5 &ndash;</span>
+          <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
+        </div>
+      </section>
+
+      <section class="hotel-search">
+        <h2 class="hoter-search__title hotel-search__title--heading">Заинтересовались?</h2>
+        <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="hotel-search__button button" href="#">Найти гостиницу</a>
+        <a class="hotel-search__map" href="#">
+          <img src="https://via.placeholder.com/320x350" width="320" height="350" alt="Карта Седоны">
+        </a>
       </section>
     </main>
 
@@ -121,17 +112,17 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">
+            <a class="social__link social__link--twitter" href="#">
               Twitter
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">
+            <a class="social__link social__link--facebook" href="#">
               Facebook
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--youtube">
+            <a class="social__link social__link--youtube" href="#">
               YouTube
             </a>
           </li>
@@ -139,7 +130,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
 

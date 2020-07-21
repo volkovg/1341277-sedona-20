@@ -43,22 +43,138 @@
     </div>
   </header>
 
+  <main class="page-main">
+    <div class="main-heading">
+      <h1 class="main-heading__title main-heading__title--heading">
+        Оставьте свой отзыв
+      </h1>
+      <p class="main-heading__description">
+        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях
+      </p>
+    </div>
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="form-feedback__fieldset">
+        <legend class="form-feedback__legend">Представьтесь:</legend>
+        <label class="form-feedback__field-text field-text">
+          <span class="field-text__name">Имя*:</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="name" placeholder="Петр" required="required">
+          </span>
+        </label>
+        <label class="form-feedback__field-text field-text">
+          <span class="field-text__name">Фамилия*:</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="surname" placeholder="Иванов" required="required">
+          </span>
+        </label>
+        <label class="form-feedback__field-text field-text">
+          <span class="field-text__name">Отчество:</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="patronymic" placeholder="Александрович">
+          </span>
+        </label>
+      </fieldset>
+      <fieldset class="form-feedback__fieldset">
+        <legend class="form-feedback__legend">Контактная информация:</legend>
+        <label class="form-feedback__field-text field-text">
+          <span class="field-text__name">Контактный телефон*:</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="tel" name="phone" placeholder="Введите телефон" required="">
+          </span>
+        </label>
+        <label class="form-feedback__field-text field-text">
+          <span class="field-text__name">Электронная почта*:</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="email" name="email" placeholder="Введите e-mail" required="">
+          </span>
+        </label>
+      </fieldset>
+      <fieldset class="form-feedback__fieldset">
+        <legend class="form-feedback__legend">Ваше общее впечатление:</legend>
+        <div class="field-radio">
+          <div class="field-radio-wrap">
+            <label class="field-radio__name">
+              <input class="field-radio__input" type="radio" name="impressions" value="rather-positive" checked="checked">
+              <span class="field-radio__name-text">Скорее положительное</span>
+            </label>
+          </div>
+        </div>
+        <div class="field-radio">
+          <div class="field-radio-wrap">
+            <label class="field-radio__name">
+              <input class="field-radio__input" type="radio" name="impressions" value="rather-negative">
+              <span class="field-radio__name-text">Скорее отрицательное</span>
+            </label>
+          </div>
+        </div>
+        <div class="field-radio">
+          <div class="field-radio-wrap">
+            <label class="field-radio__name">
+              <input class="field-radio__input" type="radio" name="impressions" value="not-sure">
+              <span class="field-radio__name-text">Затрудняюсь ответить</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-feedback__fieldset">
+        <legend class="form-feedback__legend">Посещенные достопримечательности:</legend>
+        <div class="field-checkbox">
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="devils-bridge" checked="checked">
+              <span class="field-checkbox__name-text">Мост Дьявола</span>
+            </label>
+          </div>
+        </div>
+        <div class="field-checkbox">
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="bell-rock" checked="checked">
+              <span class="field-checkbox__name-text">Гора-Колокол</span>
+            </label>
+          </div>
+        </div>
+        <div class="field-checkbox">
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="slide-park" checked="checked">
+              <span class="field-checkbox__name-text">Слайд парк</span>
+            </label>
+          </div>
+        </div>
+        <div class="field-checkbox">
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="red-rocks">
+              <span class="field-checkbox__name-text">Красные скалы</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-feedback__fieldset"> <!-- textarea без label осталась, это нормально? -->
+        <legend class="form-feedback__legend">Опишите свои эмоции:</legend>
+        <textarea class="form-feedback__textarea" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <button class="form-feedback__button button" type="submit">Отправить отзыв</button>
+    </form>
+  </main>
+
   <footer class="page-footer">
     <b class="page-footer__hashtag">#visitsedona</b>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="#" class="social__link social__link--twitter">
+          <a class="social__link social__link--twitter" href="#">
             Twitter
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--facebook">
+          <a class="social__link social__link--facebook" href="#">
             Facebook
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--youtube">
+          <a class="social__link social__link--youtube" href="#">
             YouTube
           </a>
         </li>
@@ -66,7 +182,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 
