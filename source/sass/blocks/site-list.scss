@@ -1,0 +1,24 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  display: flex;
+  background-color: #81B3D2;
+}
+
+.site-list__link {
+  flex-grow: 1;
+  height: 55px;
+  padding-top: 11px;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
