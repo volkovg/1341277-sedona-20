@@ -1,0 +1,10 @@
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
