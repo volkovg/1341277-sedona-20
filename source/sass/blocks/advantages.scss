@@ -1,0 +1,32 @@
+.advantages__item {
+  min-height: 167px;
+  background-color: #eeeeee;
+
+  &--with-picture {
+    min-height: 191px;
+    color: #ffffff;
+    background-color: #81b3d2;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  padding-top: 49px;
+}
+
+.advantages__number {
+  padding-top: 11px;
+  line-height: 21px;
+}
+
+.advantages__description {
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 39px;
+  line-height: 21px;
+}
+
+.advantages__advices {
+  margin-top: 31px;
+  margin-bottom: 9px;
+}

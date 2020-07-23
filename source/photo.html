@@ -3,50 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <title>Седона - Фото</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="burger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a>
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__intro intro">
-        <div class="intro__text">
-          <img src="https://via.placeholder.com/229x39" width="229" height="39" alt="Седона">
+      <div class="container">
+        <nav class="main-nav">
+          <button class="burger visually-hidden" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="page-header__logo logo" href="index.html">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+        </a>
+        <div class="page-header__intro intro">
+          <div class="intro__text">
+            <img intro__text-image src="img/text-sedona.svg" width="229" height="39" alt="Седона">
+          </div>
         </div>
       </div>
     </header>
 
     <main class="page-main">
       <div class="main-heading">
-        <h1 class="main-heading__title main-heading__title--heading">
+        <h1 class="main-heading__title title-middle">
           Фото и видео
         </h1>
         <p class="main-heading__description">
@@ -58,7 +63,7 @@
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
             <article class="photo">
-              <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Закат. Машина едет по пустынной дороге.">
+              <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Закат. Машина едет по пустынной дороге.">
               <h3 class="photo__title">Неродные просторы</h3>
               <p class="photo__author">Автор фото: Борис</p>
               <button class="photo__like-button" type="button">Лайк</button>
@@ -67,7 +72,7 @@
           </li>
           <li class="photo-gallery__item">
             <article class="photo">
-              <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Цветущий кактус на фоне каньона.">
+              <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Цветущий кактус на фоне каньона.">
               <h3 class="photo__title">Местная растительность</h3>
               <p class="photo__author">Автор фото: Сергей</p>
               <button class="photo__like-button" type="button">Лайк</button>
@@ -76,7 +81,7 @@
           </li>
           <li class="photo-gallery__item">
             <article class="photo">
-              <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Серпантинная дорога в лесистой местности.">
+              <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Серпантинная дорога в лесистой местности.">
               <h3 class="photo__title">Дорога на север</h3>
               <p class="photo__author">Автор фото: Петр</p>
               <button class="photo__like-button" type="button">Лайк</button>
@@ -85,7 +90,7 @@
           </li>
           <li class="photo-gallery__item">
             <article class="photo">
-              <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Естественный мост в каньоне на большой высоте.">
+              <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Естественный мост в каньоне на большой высоте.">
               <h3 class="photo__title">Мост Дьявола</h3>
               <p class="photo__author">Автор фото: Антон</p>
               <button class="photo__like-button" type="button">Лайк</button>
@@ -95,15 +100,15 @@
         </ul>
       </section>
 
-      <section class="presentation"> <!-- Не очень понятно пока как оформлять контролы для видео -->
-        <h2 class="presentation__title presentation__title--heading">Все еще сомневаетесь?</h2>
+      <section class="presentation">
+        <h2 class="presentation__title title-middle">Все еще сомневаетесь?</h2>
         <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video class="presentation__video" src="#" width="320" height="201" poster="https://via.placeholder.com/320x201" controls></video>
       </section>
     </main>
 
     <footer class="page-footer">
-      <b class="page-footer__hashtag">#visitsedona</b>
+      <b class="page-footer__hashtag title-big">#visitsedona</b>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

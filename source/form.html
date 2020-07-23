@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона - Форма отзыва</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body class="page-body">
+
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Седона">
-    </a>
     <nav class="main-nav">
-      <button class="burger" type="button">
+      <button class="burger visually-hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list">
@@ -36,6 +37,9 @@
         </li>
       </ul>
     </nav>
+    <a class="page-header__logo logo" href="index.html">
+      <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Седона">
+    </a>
     <div class="page-header__intro intro">
       <div class="intro__text">
         <img src="https://via.placeholder.com/229x39" width="229" height="39" alt="Седона">
@@ -45,7 +49,7 @@
 
   <main class="page-main">
     <div class="main-heading">
-      <h1 class="main-heading__title main-heading__title--heading">
+      <h1 class="main-heading__title title-middle">
         Оставьте свой отзыв
       </h1>
       <p class="main-heading__description">
@@ -54,7 +58,7 @@
     </div>
     <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="form-feedback__fieldset">
-        <legend class="form-feedback__legend">Представьтесь:</legend>
+        <legend class="form-feedback__legend title-middle">Представьтесь:</legend>
         <label class="form-feedback__field-text field-text">
           <span class="field-text__name">Имя*:</span>
           <span class="field-text__input-wrap">
@@ -75,7 +79,7 @@
         </label>
       </fieldset>
       <fieldset class="form-feedback__fieldset">
-        <legend class="form-feedback__legend">Контактная информация:</legend>
+        <legend class="form-feedback__legend title-middle">Контактная информация:</legend>
         <label class="form-feedback__field-text field-text">
           <span class="field-text__name">Контактный телефон*:</span>
           <span class="field-text__input-wrap">
@@ -90,7 +94,7 @@
         </label>
       </fieldset>
       <fieldset class="form-feedback__fieldset">
-        <legend class="form-feedback__legend">Ваше общее впечатление:</legend>
+        <legend class="form-feedback__legend title-middle">Ваше общее впечатление:</legend>
         <div class="field-radio">
           <div class="field-radio-wrap">
             <label class="field-radio__name">
@@ -117,7 +121,7 @@
         </div>
       </fieldset>
       <fieldset class="form-feedback__fieldset">
-        <legend class="form-feedback__legend">Посещенные достопримечательности:</legend>
+        <legend class="form-feedback__legend title-middle">Посещенные достопримечательности:</legend>
         <div class="field-checkbox">
           <div class="field-checkbox__input-wrap">
             <label class="field-checkbox__name">
@@ -151,16 +155,21 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="form-feedback__fieldset"> <!-- textarea без label осталась, это нормально? -->
-        <legend class="form-feedback__legend">Опишите свои эмоции:</legend>
-        <textarea class="form-feedback__textarea" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+      <fieldset class="form-feedback__fieldset">
+        <legend class="form-feedback__legend title-middle">Опишите свои эмоции:</legend>
+        <label class="form-feedback__field-textarea field-textarea">
+          <span class="visually-hidden">Ваши впечатления:</span>
+          <div class="field-textarea__input-wrap">
+            <textarea class="form-feedback__textarea" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+        </label>
       </fieldset>
       <button class="form-feedback__button button" type="submit">Отправить отзыв</button>
     </form>
   </main>
 
   <footer class="page-footer">
-    <b class="page-footer__hashtag">#visitsedona</b>
+    <b class="page-footer__hashtag title-big">#visitsedona</b>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

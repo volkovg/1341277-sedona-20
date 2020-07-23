@@ -1,0 +1,12 @@
+.intro {
+  min-height: 214px;
+  background-color: #dfeaf3;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--full {
+    min-height: 389px;
+  }
+}
