@@ -11,3 +11,11 @@
   line-height: 24px;
   text-transform: uppercase;
 }
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+}
