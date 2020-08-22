@@ -6,6 +6,12 @@
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+}
+
 .site-list__item {
   display: flex;
   background-color: #81b3d2;
@@ -20,5 +26,6 @@
   line-height: 40px;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
   color: #ffffff;
 }
