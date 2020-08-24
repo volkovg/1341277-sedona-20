@@ -1,10 +1,10 @@
-.page-header__logo {
-  display: flex;
-  justify-content: center;
+.page-header__wrapper {
+
+  margin: 0 auto;
 }
 
 .page-header__intro {
-  z-index: -1;
+
   top: -25px;
   position: relative;
 }
