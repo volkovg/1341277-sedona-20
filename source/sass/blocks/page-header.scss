@@ -1,10 +1,11 @@
 .page-header__wrapper {
-
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .page-header__intro {
-
-  top: -25px;
+  $offset: -25px;
+  top: $offset;
+  margin-bottom: $offset;
   position: relative;
+  z-index: 3;
 }

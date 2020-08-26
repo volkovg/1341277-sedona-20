@@ -1,6 +1,4 @@
 .site-list {
-/*   display: flex;
-  flex-direction: column; */
   display: grid;
   margin: 0;
   padding: 0;
@@ -14,9 +12,24 @@
 .site-list__item {
   display: flex;
   justify-content: center;
-  background-color: #81b3d2;
+  background-color: $basic-half-backed;
+
+  @media (max-width: $mobile-width-only) {
+    &:hover a[href] {
+      background-color: #669EC0;
+    }
+
+    &:active a[href] {
+      background-color: #5496BD;
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
+    &:hover a[href] {
+      color: $basic-half-backed;
+    }
+
     background-color: $basic-white;
   }
 }
