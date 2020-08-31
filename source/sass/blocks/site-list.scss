@@ -14,6 +14,8 @@
   justify-content: center;
 
   @media (max-width: $mobile-width-only) {
+    color: $basic-white;
+
     &:hover a[href] {
       background-color: #669ec0;
     }
@@ -38,11 +40,28 @@
   }
 
   @media (min-width: $tablet-width) {
+    color: $basic-black;
+    background-color: $basic-white;
+
+    &--active {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
     &:hover a[href] {
       color: $basic-half-backed;
     }
 
-    background-color: $basic-white;
+    &:active a[href] {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -71,7 +90,7 @@
   line-height: 40px;
   font-weight: bold;
   text-decoration: none;
-  color: $basic-white;
+  color: inherit;
 
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid #9bc2db;
@@ -82,6 +101,5 @@
     padding-top: 16px;
     font-size: 14px;
     line-height: 26px;
-    color: $basic-black;
   }
 }

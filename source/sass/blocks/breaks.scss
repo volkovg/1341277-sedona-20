@@ -1,0 +1,15 @@
+.breaks {
+  display: none;
+
+  &--mobile {
+    @media (max-width: $mobile-width-only) {
+      display: inline;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+}

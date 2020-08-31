@@ -7,4 +7,10 @@
   top: $offset;
   margin-bottom: $offset;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    $offset: -40px;
+    top: $offset;
+    margin-bottom: $offset;
+  }
 }

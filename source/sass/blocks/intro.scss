@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $basic-half-backed;
+  background-color: #4e80B0;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -30,6 +30,16 @@
         background-image: url("../img/bg-back-desktop@2x.jpg");
       }
     }
+  }
+}
+
+.intro__text-image {
+  @media (min-width: $tablet-width) {
+    width: 461px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459px;
   }
 }
 

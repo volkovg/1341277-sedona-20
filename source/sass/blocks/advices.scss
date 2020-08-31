@@ -1,3 +1,18 @@
-.advices__advice {
-  margin-bottom: 26px;
+.advices__title {
+  margin: 0;
+}
+
+.advices__description {
+  margin: 0;
+}
+
+.advices__item {
+  padding-right: 40px;
+  padding-left: 70px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .advices__item + .advices__item {
+    margin-top: 26px;
+  }
 }

@@ -17,7 +17,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a class="site-list__link">
                 Главная
               </a>
@@ -39,7 +39,11 @@
             </li>
             <li class="site-list__item site-list__logo">
               <a class="logo">
-                <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+                </picture>
               </a>
             </li>
           </ul>
@@ -59,7 +63,7 @@
     <main class="page-main">
       <div class="main-heading">
         <h1 class="main-heading__title">
-          Седона &mdash; небольшой<br class="mobile-only-br"> городок в Аризоне,<br> заслуживающий большего!
+          Седона &mdash; небольшой<br class="breaks breaks--mobile"> городок в Аризоне,<br> заслуживающий большего!
         </h1>
         <p class="main-heading__description">
           Рассмотрим 5 причин, по которым<br> Седона круче, чем Гранд Каньон!
@@ -72,9 +76,7 @@
             <div class="advantages__number">&ndash; №1 &ndash;</div>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="advantages__image-wrapper"> <!-- Переделать в пустой блок с фоновой картинкой в css -->
-            <img class="advantages__image advantages__image--city" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Вид города">
-          </div>
+          <div class="advantages__image advantages__image--city"></div>
         </div>
         <div class="advantages__advices advices">
           <div class="advices__item advices__item--home">
@@ -96,31 +98,33 @@
             <span class="advantages__number">&ndash; №2 &ndash;</span>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <div class="advantages__image">
-            <img class="advantages__image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола">
+          <div class="advantages__image advantages__image--bridge"></div>
+        </div>
+        <div class="advantages__wrapper">
+          <div class="advantages__item">
+            <h2 class="advantages__title">Небольшая площадь</h2>
+            <span class="advantages__number">&ndash; №3 &ndash;</span>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
           </div>
-        </div>
-        <div class="advantages__item">
-          <h2 class="advantages__title">Небольшая площадь</h2>
-          <span class="advantages__number">&ndash; №3 &ndash;</span>
-          <p class="advantages__description">Все интересные места находятся очень близко</p>
-        </div>
-        <div class="advantages__item">
-          <h2 class="advantages__title">Красивая дорога</h2>
-          <span class="advantages__number">&ndash; №4 &ndash;</span>
-          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="advantages__item">
-          <h2 class="advantages__title">Мало туристов</h2>
-          <span class="advantages__number">&ndash; №5 &ndash;</span>
-          <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
+          <div class="advantages__item">
+            <h2 class="advantages__title">Красивая дорога</h2>
+            <span class="advantages__number">&ndash; №4 &ndash;</span>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="advantages__item">
+            <h2 class="advantages__title">Мало туристов</h2>
+            <span class="advantages__number">&ndash; №5 &ndash;</span>
+            <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
+          </div>
         </div>
       </section>
 
-      <section class="hotel-search display-none">
-        <h2 class="hoter-search__title title-big">Заинтересовались?</h2>
-        <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-search__button button" href="#">Найти гостиницу</a>
+      <section class="hotel-search">
+        <div class="hotel-search__wrapper">
+          <h2 class="hotel-search__title">Заинтересовались?</h2>
+          <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="hotel-search__button button" href="#">Найти гостиницу</a>
+        </div>
         <a class="hotel-search__map" href="#">
           <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Седоны">
         </a>
