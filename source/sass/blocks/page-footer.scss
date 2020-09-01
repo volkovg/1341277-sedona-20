@@ -1,4 +1,11 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-footer__hashtag {
+  padding-top: 38px;
   font-size: 21px;
   line-height: 26px;
 }

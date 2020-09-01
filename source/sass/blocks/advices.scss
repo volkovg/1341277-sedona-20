@@ -7,8 +7,35 @@
 }
 
 .advices__item {
+  position: relative;
   padding-right: 40px;
   padding-left: 70px;
+}
+
+.advices__icon {
+  position: absolute;
+
+
+  &--house {
+    top: -10px;
+    left: 21px;
+    width: 39px;
+    height: 37px;
+  }
+
+  &--gift {
+    top: -10px;
+    left: 25px;
+    width: 32px;
+    height: 38px;
+  }
+
+  &--burger {
+    top: -6px;
+    left: 21px;
+    width: 40px;
+    height: 35px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
