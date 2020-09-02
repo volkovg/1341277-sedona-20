@@ -23,6 +23,7 @@
   }
 
   &--with-picture {
+    z-index: 3;
     min-height: 191px;
     color: $basic-white;
     background-color: $basic-half-backed;

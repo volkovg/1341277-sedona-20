@@ -13,6 +13,31 @@
   }
 
   text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    &::before,
+    &::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: 98%;
+      width: 50%;
+      height: 74px;
+      background-color: $basic-half-backed;
+    }
+
+    &::before {
+      right: 50%;
+      transform-origin: right;
+      transform: skewX(5deg) rotate(5deg);
+    }
+
+    &::after {
+      left: 50%;
+      transform-origin: left;
+      transform: skewX(-5deg) rotate(-5deg);
+    }
+  }
 }
 
 .main-heading__title {
