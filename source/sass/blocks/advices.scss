@@ -1,15 +1,19 @@
 .advices__title {
   margin: 0;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .advices__description {
   margin: 0;
+  padding-top: 16px;
+  line-height: 21px;
 }
 
 .advices__item {
   position: relative;
-  padding-right: 40px;
-  padding-left: 70px;
+  padding-right: 11px;
+  padding-left: 68px;
 }
 
 .advices__icon {
@@ -17,22 +21,22 @@
 
 
   &--house {
-    top: -10px;
+    top: -9px;
     left: 21px;
     width: 39px;
     height: 37px;
   }
 
   &--gift {
-    top: -10px;
+    top: -11px;
     left: 25px;
     width: 32px;
     height: 38px;
   }
 
   &--burger {
-    top: -6px;
-    left: 21px;
+    top: -5px;
+    left: 18px;
     width: 40px;
     height: 35px;
   }

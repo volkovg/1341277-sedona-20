@@ -5,7 +5,7 @@
   flex-direction: column;
 
   @media (max-width: $mobile-width-only) {
-    min-height: 242px;
+    min-height: 237px;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,7 +20,7 @@
       z-index: -1;
       content: "";
       position: absolute;
-      top: 98%;
+      top: 100%;
       width: 50%;
       height: 74px;
       background-color: $basic-half-backed;

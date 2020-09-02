@@ -7,14 +7,11 @@
 
 .advantages__item {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   background-color: #eeeeee;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 25px;
+    padding-top: 21px;
     padding-bottom: 25px;
   }
 
@@ -27,6 +24,12 @@
     min-height: 191px;
     color: $basic-white;
     background-color: $basic-half-backed;
+  }
+
+  &--with-picture .advantages__description {
+    padding-top: 18px;
+    padding-right: 13px;
+    padding-left: 12px;
   }
 }
 
@@ -49,14 +52,19 @@
   margin: 0;
   font-size: 18px;
   line-height: 26px;
+  padding-top: 5px;
 }
 
 .advantages__number {
+  display: block;
   line-height: 21px;
+  padding-top: 10px;
 }
 
 .advantages__description {
   margin: 0;
+  line-height: 21px;
+  padding-top: 18px;
   padding-right: 32px;
   padding-left: 32px;
 }
