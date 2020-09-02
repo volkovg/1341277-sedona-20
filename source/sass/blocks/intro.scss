@@ -36,6 +36,7 @@
 .intro__text-image {
   @media (min-width: $tablet-width) {
     width: 461px;
+    padding-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {

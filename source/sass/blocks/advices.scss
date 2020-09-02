@@ -2,43 +2,89 @@
   margin: 0;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    font-size: 21px;
+  }
 }
 
 .advices__description {
   margin: 0;
   padding-top: 16px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-top: 22px;
+    padding-right: 31px;
+    padding-left: 31px;
+  }
 }
 
 .advices__item {
-  position: relative;
-  padding-right: 11px;
-  padding-left: 68px;
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    padding-right: 11px;
+    padding-left: 68px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .advices__icon {
-  position: absolute;
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+  }
 
 
   &--house {
-    top: -9px;
-    left: 21px;
-    width: 39px;
-    height: 37px;
+    @media (max-width: $mobile-width-only) {
+      top: -9px;
+      left: 21px;
+      width: 39px;
+      height: 37px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 72px;
+      margin-top: 60px;
+    }
   }
 
   &--gift {
-    top: -11px;
-    left: 25px;
-    width: 32px;
-    height: 38px;
+    @media (max-width: $mobile-width-only) {
+      top: -11px;
+      left: 25px;
+      width: 32px;
+      height: 38px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 64px;
+      height: 75px;
+      margin-top: 57px;
+    }
   }
 
   &--burger {
-    top: -5px;
-    left: 18px;
-    width: 40px;
-    height: 35px;
+    @media (max-width: $mobile-width-only) {
+      top: -5px;
+      left: 18px;
+      width: 40px;
+      height: 35px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 76px;
+      height: 68px;
+      margin-top: 63px;
+    }
   }
 }
 

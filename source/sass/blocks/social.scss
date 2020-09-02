@@ -1,4 +1,24 @@
 .social__list {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  color: $basic-white;
+  background-color: $basic-half-backed;
+}
+
+.social__link:hover {
+  background-color: #5496BD;
+}
+
+.social__item + .social__item {
+  margin-left: 6px;
 }
