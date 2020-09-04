@@ -22,7 +22,7 @@
 
     &:active a[href] {
       background-color: #5496bd;
-      opacity: 0.3;
+      color: rgba($basic-white, 0.3);
     }
 
     &--last {

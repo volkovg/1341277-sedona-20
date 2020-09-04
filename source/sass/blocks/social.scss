@@ -4,8 +4,11 @@
   display: flex;
   list-style: none;
 }
+.social__item + .social__item {
+  margin-left: 6px;
+}
 
-.social__link {
+ .social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,12 +16,20 @@
   height: 48px;
   color: $basic-white;
   background-color: $basic-half-backed;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
-.social__link:hover {
-  background-color: #5496BD;
+.social__icon {
+  fill: $basic-white;
 }
 
-.social__item + .social__item {
-  margin-left: 6px;
+.social__link:active .social__icon {
+  fill: rgba($basic-white, 0.3);
 }
