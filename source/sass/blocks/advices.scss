@@ -15,10 +15,17 @@
   line-height: 21px;
 
   @media (min-width: $tablet-width) {
+    $padding-side: 31px;
     text-align: center;
     padding-top: 22px;
-    padding-right: 31px;
-    padding-left: 31px;
+    padding-right: $padding-side;
+    padding-left: $padding-side;
+  }
+
+  @media (min-width: $desktop-width) {
+    $padding-side: 50px;
+    padding-right: $padding-side;
+    padding-left: $padding-side;
   }
 }
 

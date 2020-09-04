@@ -1,12 +1,14 @@
-.page-header__wrapper {
-  // margin: 0 auto;
-}
-
 .page-header__intro {
-  $offset: -25px;
+  $offset: -29px;
   top: $offset;
   margin-bottom: $offset;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    $offset: -28px;
+    top: $offset;
+    margin-bottom: $offset;
+  }
 
   @media (min-width: $desktop-width) {
     $offset: -40px;

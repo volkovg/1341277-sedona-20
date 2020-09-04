@@ -34,9 +34,11 @@
 }
 
 .intro__text-image {
+  padding-top: 12px;
+
   @media (min-width: $tablet-width) {
     width: 461px;
-    padding-bottom: 11px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +50,7 @@
 .intro__arrow-right {
   z-index: 2;
   position: absolute;
-  top: 99%;
+  top: 100%;
   height: 79px;
   background-color: $basic-white;
 
@@ -82,12 +84,12 @@
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    top: 96%;
+    top: 97%;
     width: 25%;
   }
 
   @media (min-width: $desktop-width) {
-    top: 94%;
+    top: 95%;
   }
 }
 

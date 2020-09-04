@@ -5,11 +5,11 @@
   flex-direction: column;
 
   @media (max-width: $mobile-width-only) {
-    min-height: 237px;
+    min-height: 241px;
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 203px;
+    min-height: 206px;
   }
 
   text-align: center;
@@ -42,13 +42,18 @@
 
 .main-heading__title {
   margin: 0;
-  padding-top: 41px;
+  padding-top: 33px;
   padding-bottom: 30px;
   font-size: 18px;
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 44px;
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 56px;
   }
 }
 

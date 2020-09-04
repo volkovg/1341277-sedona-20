@@ -8,7 +8,13 @@
   }
 
   &--tablet {
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      display: inline;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
       display: inline;
     }
   }
