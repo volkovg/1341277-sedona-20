@@ -1,0 +1,25 @@
+.presentation {
+  text-align: center;
+  position: relative;
+  margin-bottom: 112px;
+}
+
+.presentation__title {
+  margin: 0;
+  padding-top: 32px;
+  font-size: 18px;
+}
+
+.presentation__description {
+  $padding-side: 30px;
+  margin: 0;
+  padding-top: 26px;
+  padding-right: $padding-side;
+  padding-left: $padding-side;
+}
+
+.presentation__videoplayer {
+  margin-top: 35px;
+}
+
+

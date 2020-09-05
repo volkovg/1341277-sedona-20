@@ -16,7 +16,7 @@
   @media (max-width: $mobile-width-only) {
     color: $basic-white;
 
-    &:hover a[href] {
+    &:hover:not(.site-list__logo) a[href] {
       background-color: #669ec0;
     }
 
@@ -79,7 +79,12 @@
     grid-row-start: 1;
   }
 
+  &:hover {
+    background-color: $basic-white;
+  }
+
   &:active a[href] {
+    background-color: $basic-white;
     opacity: 1;
   }
 }
