@@ -51,7 +51,7 @@
       }
 
       &:active {
-        opacity: 0.3;
+        color: rgba(#766357, 0.3);
       }
     }
 
@@ -77,6 +77,10 @@
   @media (min-width: $tablet-width) {
     grid-column-start: 3;
     grid-row-start: 1;
+  }
+
+  &:active a[href] {
+    opacity: 1;
   }
 }
 
