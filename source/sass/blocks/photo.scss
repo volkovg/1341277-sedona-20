@@ -1,15 +1,39 @@
 .photo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-right: 6.25%;
-  padding-left: 6.25%;
+  align-items: flex-start;
+  @media (max-width: $mobile-width-only) {
+    padding-right: 6.25%;
+    padding-left: 6.25%;
+  }
+
+/*   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content 80px;
+  } */
+}
+
+.photo__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: #f2f2f2;
+  }
 }
 
 .photo__image {
   width: 87.5vw;
   min-width: 280px;
   min-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .photo__title {

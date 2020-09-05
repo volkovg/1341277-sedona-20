@@ -60,19 +60,19 @@
 
     <main class="page-main">
       <div class="main-heading">
-        <h1 class="main-heading__title title-middle">
+        <h1 class="main-heading__title">
           Фото и видео
         </h1>
         <p class="main-heading__description">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
         </p>
       </div>
       <section class="photo-gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
         <ul class="photo-gallery__list">
-          <li class="photo-gallery__item">
+          <li class="photo-gallery__item photo-gallery__item--first-item">
             <article class="photo">
-              <a href="img/photo-sunset-desktop@2x.jpg" aria-label="Полная версия изображения">
+              <a class="photo__link" href="img/photo-sunset-desktop@2x.jpg" aria-label="Полная версия изображения">
                 <picture>
                   <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x"> -->
                   <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
@@ -80,13 +80,17 @@
                   <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Закат. Машина едет по пустынной дороге.">
                 </picture>
               </a>
-              <h3 class="photo__title">Неродные просторы</h3>
-              <p class="photo__author">Автор фото: Борис</p>
-              <div class="photo__like-wrapper">
-                <button class="photo__like-button" type="button" aria-label="Лайк">
-                  <svg class="photo__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
-                </button>
-                <span class="photo__like-counter">1350</span>
+              <div class="photo__wrapper">
+                <div class="photo__description-wrapper">
+                  <h3 class="photo__title">Неродные просторы</h3>
+                  <p class="photo__author">Автор фото: Борис</p>
+                </div>
+                <div class="photo__like-wrapper">
+                  <button class="photo__like-button" type="button" aria-label="Лайк">
+                    <svg class="photo__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                  </button>
+                  <span class="photo__like-counter">1350</span>
+                </div>
               </div>
             </article>
           </li>
@@ -98,13 +102,17 @@
                 <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Цветущий кактус на фоне каньона.">
               </picture>
-              <h3 class="photo__title">Местная растительность</h3>
-              <p class="photo__author">Автор фото: Сергей</p>
-              <div class="photo__like-wrapper">
-                <button class="photo__like-button" type="button" aria-label="Лайк">
-                  <svg class="photo__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
-                </button>
-                <span class="photo__like-counter">143</span>
+              <div class="photo__wrapper">
+                <div class="photo__description-wrapper">
+                  <h3 class="photo__title">Местная растительность</h3>
+                  <p class="photo__author">Автор фото: Сергей</p>
+                </div>
+                <div class="photo__like-wrapper">
+                  <button class="photo__like-button" type="button" aria-label="Лайк">
+                    <svg class="photo__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                  </button>
+                  <span class="photo__like-counter">143</span>
+                </div>
               </div>
             </article>
           </li>
@@ -116,31 +124,41 @@
                 <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Серпантинная дорога в лесистой местности.">
               </picture>
-              <h3 class="photo__title">Дорога на север</h3>
-              <p class="photo__author">Автор фото: Петр</p>
-              <div class="photo__like-wrapper">
-                <button class="photo__like-button" type="button" aria-label="Лайк">
-                  <svg class="photo__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
-                </button>
-                <span class="photo__like-counter">96</span>
+              <div class="photo__wrapper">
+                <div class="photo__description-wrapper">
+                  <h3 class="photo__title">Дорога на север</h3>
+                  <p class="photo__author">Автор фото: Петр</p>
+                </div>
+                <div class="photo__like-wrapper">
+                  <button class="photo__like-button" type="button" aria-label="Лайк">
+                    <svg class="photo__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                  </button>
+                  <span class="photo__like-counter">96</span>
+                </div>
               </div>
             </article>
           </li>
           <li class="photo-gallery__item">
             <article class="photo">
-              <picture>
-                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x"> -->
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Естественный мост в каньоне на большой высоте.">
-              </picture>
-              <h3 class="photo__title">Мост Дьявола</h3>
-              <p class="photo__author">Автор фото: Антон</p>
-              <div class="photo__like-wrapper">
-                <button class="photo__like-button" type="button" aria-label="Лайк">
-                  <svg class="photo__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
-                </button>
-                <span class="photo__like-counter">254</span>
+              <div class="photo__image-wrapper">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x"> -->
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Естественный мост в каньоне на большой высоте.">
+                </picture>
+              </div>
+              <div class="photo__wrapper">
+                <div class="photo__description-wrapper">
+                  <h3 class="photo__title">Мост Дьявола</h3>
+                  <p class="photo__author">Автор фото: Антон</p>
+                </div>
+                <div class="photo__like-wrapper">
+                  <button class="photo__like-button" type="button" aria-label="Лайк">
+                    <svg class="photo__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                  </button>
+                  <span class="photo__like-counter">254</span>
+                </div>
               </div>
             </article>
           </li>

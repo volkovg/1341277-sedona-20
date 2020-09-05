@@ -58,21 +58,31 @@
   justify-content: center;
 }
 
+.videoplayer__subtitles {
+  justify-content: flex-end;
+}
+
 .videoplayer__button {
   width: 35px;
   height: 25px;
   padding: 0;
+  background-color: transparent;
   border: none;
 
   &--replay {
+    width: 16px;
+    height: 20px;
     margin-right: 74px;
   }
 
   &--subtitles {
-    padding-left: 16px;
+    width: 32px;
+    height: 20px;
   }
 
   &--fullscreen {
+    width: 20px;
+    height: 20px;
     padding-left: 4px;
   }
 }

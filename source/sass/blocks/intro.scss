@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 158px;
+
   background-color: #4e80b0;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   @media (min-resolution: 2dppx) {
@@ -13,6 +14,42 @@
   background-position: 50% bottom;
   z-index: 1;
 
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    z-index: 2;
+    position: absolute;
+
+    height: 79px;
+    background-color: $basic-white;
+
+    @media (min-width: $tablet-width) {
+      top: 94%;
+      width: 25%;
+    }
+  }
+
+  &::before {
+    right: 75%;
+    transform-origin: right;
+    transform: skewX(5deg) rotate(6deg);
+  }
+
+  &::after {
+    left: 75%;
+    transform-origin: left;
+    transform: skewX(-5deg) rotate(-6deg);
+  }
+
   &--index {
     min-height: 389px;
     background-size: cover;
@@ -21,10 +58,6 @@
 
     @media (min-width: $tablet-width) {
       min-height: 518px;
-      background-image: url("../img/bg-back-tablet@1x.jpg");
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/bg-back-tablet@2x.jpg");
-      }
     }
 
     @media (min-width: $desktop-width) {
@@ -33,12 +66,28 @@
         background-image: url("../img/bg-back-desktop@2x.jpg");
       }
     }
+
+    &::before,
+    &::after {
+      @media (min-width: $tablet-width) {
+        top: 97%;
+        width: 25%;
+      }
+      @media (min-width: $desktop-width) {
+        top: 95%;
+      }
+    }
   }
 }
 
 .intro__text-image {
-  padding-bottom: 8px;
-
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 8px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding-bottom: 16px;
+  }
 
   &--index {
     padding-top: 12px;
@@ -81,34 +130,4 @@
   left: 50%;
   transform-origin: left;
   transform: skewX(-9deg) rotate(-9deg);
-}
-
-.intro__arrow-left-big,
-.intro__arrow-right-big {
-  z-index: 2;
-  position: absolute;
-
-  height: 79px;
-  background-color: $basic-white;
-
-  @media (min-width: $tablet-width) {
-    top: 97%;
-    width: 25%;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 95%;
-  }
-}
-
-.intro__arrow-left-big {
-  right: 75%;
-  transform-origin: right;
-  transform: skewX(5deg) rotate(6deg);
-}
-
-.intro__arrow-right-big {
-  left: 75%;
-  transform-origin: left;
-  transform: skewX(-5deg) rotate(-6deg);
 }

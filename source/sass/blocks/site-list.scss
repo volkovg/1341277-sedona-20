@@ -5,7 +5,8 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: min-content;
   }
 }
 
