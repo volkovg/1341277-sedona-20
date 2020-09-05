@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Седона - Фото</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body class="page__body">
 
     <header class="page-header">
-      <div class="container">
-        <nav class="main-nav">
-          <button class="burger visually-hidden" type="button">
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
@@ -21,7 +22,7 @@
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a class="site-list__link">
                 Фото и видео
               </a>
@@ -31,20 +32,28 @@
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--last">
               <a class="site-list__link" href="#">
                 HTML Academy
               </a>
             </li>
+            <li class="site-list__item site-list__logo">
+              <a class="logo" href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+                </picture>
+              </a>
+            </li>
           </ul>
         </nav>
-        <a class="page-header__logo logo" href="index.html">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
-        </a>
         <div class="page-header__intro intro">
           <div class="intro__text">
-            <img intro__text-image src="img/text-sedona.svg" width="229" height="39" alt="Седона">
+            <img class="intro__text intro__text-image" src="img/text-sedona.svg" width="229" height="39" alt="Седона">
           </div>
+          <div class="intro__arrow-left"></div>
+          <div class="intro__arrow-right"></div>
         </div>
       </div>
     </header>
@@ -63,51 +72,79 @@
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
             <article class="photo">
-              <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Закат. Машина едет по пустынной дороге.">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x"> -->
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Закат. Машина едет по пустынной дороге.">
+              </picture>
               <h3 class="photo__title">Неродные просторы</h3>
               <p class="photo__author">Автор фото: Борис</p>
-              <button class="photo__like-button" type="button">Лайк</button>
-              <span class="photo__like-counter">1350</span>
+              <div class="photo__like-wrapper">
+                <button class="photo__like-button" type="button">Лайк</button>
+                <span class="photo__like-counter">1350</span>
+              </div>
             </article>
           </li>
           <li class="photo-gallery__item">
             <article class="photo">
-              <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Цветущий кактус на фоне каньона.">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x"> -->
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Цветущий кактус на фоне каньона.">
+              </picture>
               <h3 class="photo__title">Местная растительность</h3>
               <p class="photo__author">Автор фото: Сергей</p>
-              <button class="photo__like-button" type="button">Лайк</button>
-              <span class="photo__like-counter">143</span>
+              <div class="photo__like-wrapper">
+                <button class="photo__like-button" type="button">Лайк</button>
+                <span class="photo__like-counter">143</span>
+              </div>
             </article>
           </li>
           <li class="photo-gallery__item">
             <article class="photo">
-              <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Серпантинная дорога в лесистой местности.">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x"> -->
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Серпантинная дорога в лесистой местности.">
+              </picture>
               <h3 class="photo__title">Дорога на север</h3>
               <p class="photo__author">Автор фото: Петр</p>
-              <button class="photo__like-button" type="button">Лайк</button>
-              <span class="photo__like-counter">96</span>
+              <div class="photo__like-wrapper">
+                <button class="photo__like-button" type="button">Лайк</button>
+                <span class="photo__like-counter">96</span>
+              </div>
             </article>
           </li>
           <li class="photo-gallery__item">
             <article class="photo">
-              <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Естественный мост в каньоне на большой высоте.">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x"> -->
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Естественный мост в каньоне на большой высоте.">
+              </picture>
               <h3 class="photo__title">Мост Дьявола</h3>
               <p class="photo__author">Автор фото: Антон</p>
-              <button class="photo__like-button" type="button">Лайк</button>
-              <span class="photo__like-counter">254</span>
+              <div class="photo__like-wrapper">
+                <button class="photo__like-button" type="button">Лайк</button>
+                <span class="photo__like-counter">254</span>
+              </div>
             </article>
           </li>
         </ul>
       </section>
 
-      <section class="presentation">
+      <section class="presentation display-none">
         <h2 class="presentation__title title-middle">Все еще сомневаетесь?</h2>
         <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video class="presentation__video" src="#" width="320" height="201" poster="https://via.placeholder.com/320x201" controls></video>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer style="display:none" class="page-footer">
       <b class="page-footer__hashtag title-big">#visitsedona</b>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -134,5 +171,6 @@
       </div>
     </footer>
 
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 6.25%;
+  padding-left: 6.25%;
+}
+
+.photo__image {
+  width: 87.5vw;
+  min-width: 280px;
+  min-height: 280px;
+}
+
+.photo__title {
+  align-self: start;
+  font-size: 14px;
+  margin: 0;
+}
+
+.photo__author {
+  margin: 0;
+  align-self: start;
+}
+
+.photo__like-wrapper {
+  align-self: start;
+}
+
+.photo__like-button {
+
+}
+
+.photo__like-counter {
+
+}
