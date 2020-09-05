@@ -5,7 +5,7 @@
   flex-direction: column;
 
   @media (max-width: $mobile-width-only) {
-    min-height: 241px;
+    min-height: 189px;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,6 +16,7 @@
 
   &--index {
     @media (max-width: $mobile-width-only) {
+      min-height: 241px;
       &::before,
       &::after {
         z-index: -1;

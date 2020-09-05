@@ -16,21 +16,35 @@
   align-self: start;
   font-size: 14px;
   margin: 0;
+  padding-top: 3px;
 }
 
 .photo__author {
   margin: 0;
   align-self: start;
+  text-transform: none;
 }
 
 .photo__like-wrapper {
   align-self: start;
+  padding-top: 12px;
 }
 
 .photo__like-button {
+  width: 23px;
+  height: 21px;
+  padding: 0;
+  padding-top: 1px;
+  border: none;
+  background-color: transparent;
+}
 
+.photo__icon {
+  fill: rgba($basic-black, 0.3);
 }
 
 .photo__like-counter {
-
+  padding-left: 10px;
+  font-weight: bold;
+  vertical-align: top;
 }
