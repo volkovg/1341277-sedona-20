@@ -6,16 +6,33 @@
 
 .presentation__title {
   margin: 0;
-  padding-top: 32px;
-  font-size: 18px;
+  @media (max-width: $mobile-width-only) {
+    padding-top: 32px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .presentation__description {
-  $padding-side: 30px;
   margin: 0;
-  padding-top: 26px;
-  padding-right: $padding-side;
-  padding-left: $padding-side;
+  @media (max-width: $mobile-width-only) {
+    $padding-side: 30px;
+    padding-top: 26px;
+    padding-right: $padding-side;
+    padding-left: $padding-side;
+  }
+
+  @media (min-width: $tablet-width) {
+    $padding-side: 160px;
+    padding-top: 33px;
+    padding-right: $padding-side;
+    padding-left: $padding-side;
+  }
 }
 
 .presentation__videoplayer {
