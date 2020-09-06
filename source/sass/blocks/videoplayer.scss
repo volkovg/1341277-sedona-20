@@ -20,6 +20,15 @@
       background-image: url("../img/video-tablet@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    padding-top: 1px;
+    background-image: url("../img/video-desktop@1x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
+  }
 }
 
 .videoplayer__controls {
@@ -74,6 +83,10 @@
   @media (min-width: $tablet-width) {
     width: 389px;
     background-color: rgba($basic-white, 0.2);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
   }
 }
 

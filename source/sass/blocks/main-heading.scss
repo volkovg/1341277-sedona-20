@@ -55,6 +55,10 @@
     padding-top: 63px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+  }
+
   &--index {
     padding-bottom: 30px;
 
@@ -80,6 +84,12 @@
   @media (min-width: $tablet-width) {
     $padding-side: 170px;
     padding-top: 6px;
+    padding-right: $padding-side;
+    padding-left: $padding-side;
+  }
+
+  @media (min-width: $desktop-width) {
+    $padding-side: 380px;
     padding-right: $padding-side;
     padding-left: $padding-side;
   }

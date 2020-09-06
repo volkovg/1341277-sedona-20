@@ -10,8 +10,14 @@
     margin-top: 43px;
     margin-right: auto;
     margin-left: auto;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(2, 324px);
     grid-template-rows: min-content min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 400px);
   }
 }
 
@@ -49,6 +55,10 @@
     @media (min-width: $tablet-width) {
       grid-column: 1 / -1;
       min-height: 480px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 400px;
     }
   }
 }

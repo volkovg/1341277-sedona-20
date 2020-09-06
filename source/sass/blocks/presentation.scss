@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 92px;
+  }
 }
 
 .presentation__title {
@@ -22,6 +26,10 @@
     padding-top: 56px;
     font-size: 30px;
     line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
   }
 }
 
@@ -40,6 +48,12 @@
     padding-right: $padding-side;
     padding-left: $padding-side;
   }
+
+  @media (min-width: $desktop-width) {
+    $padding-side: 370px;
+    padding-right: $padding-side;
+    padding-left: $padding-side;
+  }
 }
 
 .presentation__videoplayer {
@@ -49,6 +63,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 77px;
   }
 }
 
