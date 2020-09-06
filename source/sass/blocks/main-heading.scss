@@ -71,6 +71,12 @@
       padding-top: 56px;
     }
   }
+
+  &--form {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 37px;
+    }
+  }
 }
 
 .main-heading__description {

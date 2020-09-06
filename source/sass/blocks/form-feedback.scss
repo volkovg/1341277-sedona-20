@@ -1,0 +1,141 @@
+.form-feedback {
+  display: grid;
+  grid-template-rows: min-content;
+  margin: 0;
+}
+
+.form-feedback__container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.form-feedback__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &--telemail {
+    flex-direction: column;
+  }
+
+  &--radiochecks {
+    justify-content: flex-start;
+  }
+}
+
+.form-feedback__label {
+  padding-right: 13px;
+}
+
+.form-feedback__input-wrapper {
+  width: 100%;
+  position: relative;
+
+
+  &--tel,
+  &--email {
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: "";
+      display: block;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--tel {
+    &::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  &--email {
+    &::after {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+}
+
+.form-feedback__input {
+  width: 100%;
+  height: 58px;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 22px;
+
+
+
+  &::placeholder {
+    color: $basic-black;
+  }
+
+  &::-moz-placeholder {
+    color: $basic-black;
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    border: 4px solid #e5e5e5;
+    background-color: $basic-white;
+  }
+}
+
+.form-feedback__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-feedback__legend {
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-feedback__textarea {
+  width: 100%;
+  padding-top: 13px;
+  padding-left: 21px;
+  height: 160px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border: none;
+
+  &::placeholder {
+    color: $basic-black;
+  }
+
+  &::-moz-placeholder {
+    color: $basic-black;
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    border: 4px solid #e5e5e5;
+    background-color: $basic-white;
+  }
+}
