@@ -1,7 +1,14 @@
 .presentation {
   text-align: center;
   position: relative;
-  margin-bottom: 112px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 112px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .presentation__title {
@@ -36,7 +43,13 @@
 }
 
 .presentation__videoplayer {
-  margin-top: 35px;
+  @media (max-width: $mobile-width-only) {
+    margin-top: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
 }
 
 
