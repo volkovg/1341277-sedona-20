@@ -47,10 +47,6 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-
-  }
-
   &--first-item {
     @media (min-width: $tablet-width) {
       grid-column: 1 / -1;

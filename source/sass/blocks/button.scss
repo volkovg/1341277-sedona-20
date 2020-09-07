@@ -2,15 +2,23 @@
   display: block;
   width: 280px;
   height: 58px;
+  border: none;
+  padding: 0;
   padding-top: 15px;
   font-size: 21px;
   line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-half-backed;
 
   @media (min-width: $tablet-width) {
     width: 458px;
+  }
+
+  &--send {
+    padding-top: 6px;
   }
 }

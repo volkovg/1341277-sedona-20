@@ -68,35 +68,41 @@
         </p>
       </div>
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="form-feedback__fieldset">
-          <div class="form-feedback__container">
+        <fieldset class="form-feedback__fieldset form-feedback__fieldset--id">
+          <div class="form-feedback__container form-feedback__container--id">
             <legend class="form-feedback__legend">Представьтесь:</legend>
             <div class="form-feedback__wrapper">
               <label class="form-feedback__label" for="name">Имя*:</label>
-              <input class="form-feedback__input" id="name" type="text" name="name" placeholder="Петр" required="required">
+              <div class="form-feedback__input-wrapper">
+                <input class="form-feedback__input" id="name" type="text" name="name" placeholder="Петр" required="required">
+              </div>
             </div>
             <div class="form-feedback__wrapper">
               <label class="form-feedback__label" for="surname">Фамилия*:</label>
-              <input class="form-feedback__input" id="surname" type="text" name="surname" placeholder="Иванов" required="required">
+              <div class="form-feedback__input-wrapper">
+                <input class="form-feedback__input" id="surname" type="text" name="surname" placeholder="Иванов" required="required">
+              </div>
             </div>
             <div class="form-feedback__wrapper">
               <label class="form-feedback__label" for="patronymic">Отчество:</label>
-              <input class="form-feedback__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+              <div class="form-feedback__input-wrapper">
+                <input class="form-feedback__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+              </div>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form-feedback__fieldset">
+        <fieldset class="form-feedback__fieldset form-feedback__fieldset--telemail">
           <div class="form-feedback__container">
             <legend class="form-feedback__legend">Контактная информация:</legend>
             <div class="form-feedback__wrapper form-feedback__wrapper--telemail">
-              <label class="form-feedback__label" for="tel">Контактный телефон*:</label>
+              <label class="form-feedback__label form-feedback__label--telemail" for="tel">Контактный телефон*:</label>
               <div class="form-feedback__input-wrapper form-feedback__input-wrapper--tel">
                 <input class="form-feedback__input" id="tel" type="tel" name="phone" placeholder="Введите телефон" required="">
               </div>
             </div>
             <div class="form-feedback__wrapper form-feedback__wrapper--telemail">
-              <label class="form-feedback__label" for="email">Электронная почта*:</label>
+              <label class="form-feedback__label form-feedback__label--telemail" for="email">Электронная почта*:</label>
               <div class="form-feedback__input-wrapper form-feedback__input-wrapper--email">
                 <input class="form-feedback__input form-feedback__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required="">
               </div>
@@ -104,57 +110,57 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-feedback__fieldset">
-          <div class="form-feedback__container">
-            <legend class="form-feedback__legend">Ваше общее впечатление:</legend>
+        <fieldset class="form-feedback__fieldset form-feedback__fieldset--radio">
+          <div class="form-feedback__container form-feedback__container--radio">
+            <legend class="form-feedback__legend form-feedback__legend--radio">Ваше общее впечатление:</legend>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
               <input class="form-feedback__radio" id="radio-pos" type="radio" name="impressions" value="rather-positive" checked="checked">
-              <label class="form-feedback__label" for="radio-pos">Скорее положительное</label>
+              <label class="form-feedback__label form-feedback__label--radiochecks" for="radio-pos">Скорее положительное</label>
             </div>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
-              <input class="field-radio__input" id="radio-neg" type="radio" name="impressions" value="rather-negative">
-              <label class="form-feedback__label" for="radio-neg">Скорее отрицательное</label>
+              <input class="form-feedback__radio" id="radio-neg" type="radio" name="impressions" value="rather-negative">
+              <label class="form-feedback__label form-feedback__label--radiochecks" for="radio-neg">Скорее отрицательное</label>
             </div>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
-              <input class="field-radio__input" id="radio-notsure" type="radio" name="impressions" value="not-sure">
-              <label class="form-feedback__label" for="radio-notsure">Затрудняюсь ответить</label>
+              <input class="form-feedback__radio" id="radio-notsure" type="radio" name="impressions" value="not-sure">
+              <label class="form-feedback__label form-feedback__label--radiochecks" for="radio-notsure">Затрудняюсь ответить</label>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form-feedback__fieldset">
-          <div class="form-feedback__container">
+        <fieldset class="form-feedback__fieldset form-feedback__fieldset--checks">
+          <div class="form-feedback__container form-feedback__container--checks">
             <legend class="form-feedback__legend">Посещенные достопримечательности:</legend>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
-              <input class="field-checkbox__input" id="check-db" type="checkbox" name="devils-bridge" checked="checked">
-              <label class="form-feedback__label" for="check-db">Мост Дьявола</label>
+              <input class="form-feedback__checkbox" id="check-db" type="checkbox" name="devils-bridge" checked="checked">
+              <label class="form-feedback__label form-feedback__label--radiochecks" for="check-db">Мост Дьявола</label>
             </div>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
-              <input class="field-checkbox__input" id="check-br" type="checkbox" name="bell-rock" checked="checked">
-              <label class="form-feedback__label" for="check-br">Гора-Колокол</label>
+              <input class="form-feedback__checkbox" id="check-br" type="checkbox" name="bell-rock" checked="checked">
+              <label class="form-feedback__label form-feedback__label--radiochecks" for="check-br">Гора-Колокол</label>
             </div>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
-              <input class="field-checkbox__input" id="check-sp" type="checkbox" name="slide-park" checked="checked">
-              <label class="form-feedback__label" for="check-sp">Слайд парк</label>
+              <input class="form-feedback__checkbox" id="check-sp" type="checkbox" name="slide-park" checked="checked">
+              <label class="form-feedback__label form-feedback__label--radiochecks" for="check-sp">Слайд парк</label>
             </div>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
-              <input class="field-checkbox__input" id="check-rr" type="checkbox" name="red-rocks">
-              <label class="form-feedback__label" for="check-rr">Красные скалы</label>
+              <input class="form-feedback__checkbox" id="check-rr" type="checkbox" name="red-rocks">
+              <label class="form-feedback__label form-feedback__label--radiochecks" for="check-rr">Красные скалы</label>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form-feedback__fieldset">
+        <fieldset class="form-feedback__fieldset form-feedback__fieldset--textarea">
           <div class="form-feedback__container">
             <legend class="form-feedback__legend">Опишите свои эмоции:</legend>
-            <div class="form-feedback__wrapper">
+            <div class="form-feedback__wrapper form-feedback__wrapper--textarea">
               <label class="form-feedback__label visually-hidden" for="textarea-feedback">Ваши впечатления:</label>
               <textarea class="form-feedback__textarea" id="textarea-feedback" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </div>
         </fieldset>
         <div class="form-feedback__container">
-          <button class="form-feedback__button button" type="submit">Отправить отзыв</button>
+          <button class="form-feedback__button button button--send" type="submit">Отправить отзыв</button>
         </div>
       </form>
     </main>

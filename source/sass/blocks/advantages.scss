@@ -188,10 +188,7 @@
     grid-template-columns: repeat(3, 1fr);
     min-height: 330px;
 
-    &--food {
-      grid-column: 2;
-      grid-row: 1;
-    }
+
   }
 
   @media (max-width: $mobile-width-only) {
