@@ -70,7 +70,7 @@
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--id">
           <div class="form-feedback__container form-feedback__container--id">
-            <legend class="form-feedback__legend">Представьтесь:</legend>
+            <legend class="form-feedback__legend form-feedback__legend--id">Представьтесь:</legend>
             <div class="form-feedback__wrapper">
               <label class="form-feedback__label" for="name">Имя*:</label>
               <div class="form-feedback__input-wrapper">
@@ -93,8 +93,8 @@
         </fieldset>
 
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--telemail">
-          <div class="form-feedback__container">
-            <legend class="form-feedback__legend">Контактная информация:</legend>
+          <div class="form-feedback__container form-feedback__container--telemail">
+            <legend class="form-feedback__legend form-feedback__legend--telemail">Контактная информация:</legend>
             <div class="form-feedback__wrapper form-feedback__wrapper--telemail">
               <label class="form-feedback__label form-feedback__label--telemail" for="tel">Контактный телефон*:</label>
               <div class="form-feedback__input-wrapper form-feedback__input-wrapper--tel">
@@ -102,7 +102,7 @@
               </div>
             </div>
             <div class="form-feedback__wrapper form-feedback__wrapper--telemail">
-              <label class="form-feedback__label form-feedback__label--telemail" for="email">Электронная почта*:</label>
+              <label class="form-feedback__label form-feedback__label--telemail form-feedback__label--email" for="email">Электронная почта*:</label>
               <div class="form-feedback__input-wrapper form-feedback__input-wrapper--email">
                 <input class="form-feedback__input form-feedback__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required="">
               </div>
@@ -130,20 +130,20 @@
 
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--checks">
           <div class="form-feedback__container form-feedback__container--checks">
-            <legend class="form-feedback__legend">Посещенные достопримечательности:</legend>
-            <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
+            <legend class="form-feedback__legend form-feedback__legend--checks">Посещенные достопримечательности:</legend>
+            <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks form-feedback__wrapper--checks">
               <input class="form-feedback__checkbox" id="check-db" type="checkbox" name="devils-bridge" checked="checked">
               <label class="form-feedback__label form-feedback__label--radiochecks" for="check-db">Мост Дьявола</label>
             </div>
-            <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
+            <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks form-feedback__wrapper--checks">
               <input class="form-feedback__checkbox" id="check-br" type="checkbox" name="bell-rock" checked="checked">
               <label class="form-feedback__label form-feedback__label--radiochecks" for="check-br">Гора-Колокол</label>
             </div>
-            <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
+            <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks form-feedback__wrapper--checks">
               <input class="form-feedback__checkbox" id="check-sp" type="checkbox" name="slide-park" checked="checked">
               <label class="form-feedback__label form-feedback__label--radiochecks" for="check-sp">Слайд парк</label>
             </div>
-            <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
+            <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks form-feedback__wrapper--checks">
               <input class="form-feedback__checkbox" id="check-rr" type="checkbox" name="red-rocks">
               <label class="form-feedback__label form-feedback__label--radiochecks" for="check-rr">Красные скалы</label>
             </div>
@@ -151,8 +151,8 @@
         </fieldset>
 
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--textarea">
-          <div class="form-feedback__container">
-            <legend class="form-feedback__legend">Опишите свои эмоции:</legend>
+          <div class="form-feedback__container form-feedback__container--textarea">
+            <legend class="form-feedback__legend form-feedback__legend--textarea">Опишите свои эмоции:</legend>
             <div class="form-feedback__wrapper form-feedback__wrapper--textarea">
               <label class="form-feedback__label visually-hidden" for="textarea-feedback">Ваши впечатления:</label>
               <textarea class="form-feedback__textarea" id="textarea-feedback" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -161,6 +161,9 @@
         </fieldset>
         <div class="form-feedback__container">
           <button class="form-feedback__button button button--send" type="submit">Отправить отзыв</button>
+        </div>
+        <div class="form-feedback__reminder">
+          <span class="form-feedback__reminder-text">* — обязательные поля</span>
         </div>
       </form>
     </main>

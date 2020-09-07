@@ -20,5 +20,10 @@
 
   &--send {
     padding-top: 6px;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      padding-right: 11px;
+    }
   }
 }
