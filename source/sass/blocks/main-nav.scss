@@ -7,7 +7,7 @@
       display: none;
     }
 
-    &--closed .main-nav__toggle:before {
+    &--closed .main-nav__toggle::before {
       content: "";
       position: absolute;
       top: 3px;
@@ -19,7 +19,6 @@
     }
 
     &--opened .main-nav__toggle {
-
       &::before,
       &::after {
         content: "";
@@ -77,4 +76,3 @@
     display: none;
   }
 }
-

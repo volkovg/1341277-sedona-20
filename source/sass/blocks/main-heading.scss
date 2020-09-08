@@ -17,6 +17,7 @@
   &--index {
     @media (max-width: $mobile-width-only) {
       min-height: 241px;
+
       &::before,
       &::after {
         z-index: -1;

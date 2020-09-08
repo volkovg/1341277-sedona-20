@@ -3,7 +3,6 @@
   display: flex;
 
   &--failure {
-
     @media (max-width: $mobile-width-only) {
       width: 320px;
       height: 280px;
@@ -16,7 +15,6 @@
   }
 
   &--success {
-
     @media (max-width: $mobile-width-only) {
       width: 320px;
       height: 323px;
@@ -31,9 +29,9 @@
 
 .modal__wrapper {
   background: $basic-white;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  @media (max-width: $mobile-width-only) {
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
+  @media (max-width: $mobile-width-only) {
     width: 320px;
     min-height: 280px;
     display: flex;
@@ -68,10 +66,8 @@
   &--success {
     padding-top: 38px;
 
-
     @media (min-width: $tablet-width) {
       padding-top: 46px;
-
     }
   }
 }
@@ -105,7 +101,6 @@
       padding-left: $padding-side;
     }
   }
-
 }
 
 .modal__button {

@@ -39,9 +39,11 @@
       height: 1px;
       background-color: #e5e5e5;
     }
+
     &::before {
       top: 0;
     }
+
     &::after {
       bottom: 0;
     }

@@ -4,9 +4,11 @@
   padding-right: 3px;
   padding-bottom: 13px;
   padding-left: 7px;
+
   @media (min-width: $tablet-width) {
     padding-left: 84px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 188px;
   }

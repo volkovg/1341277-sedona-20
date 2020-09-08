@@ -17,6 +17,7 @@
 
 .presentation__title {
   margin: 0;
+
   @media (max-width: $mobile-width-only) {
     padding-top: 32px;
     font-size: 18px;
@@ -35,6 +36,7 @@
 
 .presentation__description {
   margin: 0;
+
   @media (max-width: $mobile-width-only) {
     $padding-side: 30px;
     padding-top: 26px;
@@ -69,5 +71,3 @@
     margin-top: 77px;
   }
 }
-
-
