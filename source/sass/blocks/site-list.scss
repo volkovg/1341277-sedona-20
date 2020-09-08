@@ -64,6 +64,12 @@
       opacity: 0.3;
     }
   }
+
+  &--form {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      padding-left: 7px;
+    }
+  }
 }
 
 .site-list__item--last .site-list__link {
