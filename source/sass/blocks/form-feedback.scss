@@ -139,7 +139,7 @@
       }
 
       &::after {
-        right: 0;
+        right: 12px;
       }
     }
 
@@ -261,7 +261,7 @@
 
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-template-columns: 249px 258px 238px 325px;
+      grid-template-columns: 259px 258px 239px 216px;
       grid-template-rows: min-content;
       column-gap: 0;
       margin-top: 2px;
@@ -439,6 +439,7 @@
 }
 
 .form-feedback__legend {
+  margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
@@ -487,8 +488,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-right: 420px;
-      padding-left: 310px;
+      padding-right: 360px;
+      padding-left: 344px;
     }
   }
 
@@ -639,11 +640,5 @@
 
 .form-feedback__reminder-text {
   padding-bottom: 14px;
-}
-
-@media (min-width: $desktop-width) {
-  .form-feedback__wrapper--checks + .form-feedback__wrapper--checks {
-    padding-left: 10px;
-  }
 }
 

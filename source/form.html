@@ -70,7 +70,7 @@
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--id">
           <div class="form-feedback__container form-feedback__container--id">
-            <legend class="form-feedback__legend form-feedback__legend--id">Представьтесь:</legend>
+            <h2 class="form-feedback__legend form-feedback__legend--id">Представьтесь:</h2>
             <div class="form-feedback__wrapper">
               <label class="form-feedback__label" for="name">Имя*:</label>
               <div class="form-feedback__input-wrapper">
@@ -94,9 +94,9 @@
 
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--telemail">
           <div class="form-feedback__container form-feedback__container--telemail">
-            <legend class="form-feedback__legend form-feedback__legend--telemail">Контактная информация:</legend>
+            <h2 class="form-feedback__legend form-feedback__legend--telemail">Контактная информация:</h2>
             <div class="form-feedback__wrapper form-feedback__wrapper--telemail">
-              <label class="form-feedback__label form-feedback__label--telemail" for="tel"><span class="form-feedback__label--desktop">Контактный</span> телефон*:</label>
+              <label class="form-feedback__label form-feedback__label--telemail" for="tel"><span class="form-feedback__label form-feedback__label--desktop">Контактный</span> телефон*:</label>
               <div class="form-feedback__input-wrapper form-feedback__input-wrapper--tel">
                 <input class="form-feedback__input" id="tel" type="tel" name="phone" placeholder="Введите телефон" required="">
               </div>
@@ -112,7 +112,7 @@
 
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--radio">
           <div class="form-feedback__container form-feedback__container--radio">
-            <legend class="form-feedback__legend form-feedback__legend--radio">Ваше общее впечатление:</legend>
+            <h2 class="form-feedback__legend form-feedback__legend--radio">Ваше общее впечатление:</h2>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks">
               <input class="form-feedback__radio" id="radio-pos" type="radio" name="impressions" value="rather-positive" checked="checked">
               <label class="form-feedback__label form-feedback__label--radiochecks" for="radio-pos">Скорее положительное</label>
@@ -130,7 +130,7 @@
 
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--checks">
           <div class="form-feedback__container form-feedback__container--checks">
-            <legend class="form-feedback__legend form-feedback__legend--checks">Посещенные достопримечательности:</legend>
+            <h2 class="form-feedback__legend form-feedback__legend--checks">Посещенные достопримечательности:</h2>
             <div class="form-feedback__wrapper form-feedback__wrapper--radiochecks form-feedback__wrapper--checks">
               <input class="form-feedback__checkbox" id="check-db" type="checkbox" name="devils-bridge" checked="checked">
               <label class="form-feedback__label form-feedback__label--radiochecks" for="check-db">Мост Дьявола</label>
@@ -152,7 +152,7 @@
 
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--textarea">
           <div class="form-feedback__container form-feedback__container--textarea">
-            <legend class="form-feedback__legend form-feedback__legend--textarea">Опишите свои эмоции:</legend>
+            <h2 class="form-feedback__legend form-feedback__legend--textarea">Опишите свои эмоции:</h2>
             <div class="form-feedback__wrapper form-feedback__wrapper--textarea">
               <label class="form-feedback__label visually-hidden" for="textarea-feedback">Ваши впечатления:</label>
               <textarea class="form-feedback__textarea" id="textarea-feedback" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -196,6 +196,23 @@
         </a>
       </div>
     </footer>
+
+    <section class="visually-hidden page__modal page__modal--failure modal modal--failure">
+      <div class="modal__wrapper">
+        <h2 class="modal__title modal__title--failure">Что-то пошло не так!</h2>
+        <p class="modal__text modal__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button modal__button--failure button button--failure">OK</button>
+      </div>
+    </section>
+    <section class="visually-hidden page__modal page__modal--success modal modal--success">
+      <div class="modal__wrapper">
+        <h2 class="modal__title modal__title--success">Ваш отзыв отправлен!</h2>
+        <p class="modal__text modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br class="breaks breaks--mobile"> В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal__button-wrapper">
+          <button class="modal__button modal__button--success button button--success">Закрыть окно</button>
+        </div>
+      </div>
+    </section>
 
     <script src="js/script.js"></script>
   </body>

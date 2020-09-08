@@ -1,0 +1,148 @@
+.modal {
+  z-index: 99;
+  display: flex;
+
+  &--failure {
+
+    @media (max-width: $mobile-width-only) {
+      width: 320px;
+      height: 280px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 400px;
+      height: 347px;
+    }
+  }
+
+  &--success {
+
+    @media (max-width: $mobile-width-only) {
+      width: 320px;
+      height: 323px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 640px;
+      height: 347px;
+    }
+  }
+}
+
+.modal__wrapper {
+  background: $basic-white;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  @media (max-width: $mobile-width-only) {
+
+    width: 320px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  &--failure {
+    padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 52px;
+      $padding-side: 80px;
+      padding-right: $padding-side;
+      padding-left: $padding-side;
+    }
+  }
+
+  &--success {
+    padding-top: 38px;
+
+
+    @media (min-width: $tablet-width) {
+      padding-top: 46px;
+
+    }
+  }
+
+}
+
+.modal__text {
+  margin: 0;
+  text-align: center;
+
+  &--failure {
+    padding-top: 26px;
+    $padding-side: 50px;
+    padding-right: $padding-side;
+    padding-left: $padding-side;
+
+
+    @media (min-width: $tablet-width) {
+      padding-top: 23px;
+    }
+  }
+
+  &--success {
+    padding-top: 26px;
+    $padding-side: 52px;
+    padding-right: $padding-side;
+    padding-left: $padding-side;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 24px;
+      $padding-side: 110px;
+      padding-right: $padding-side;
+      padding-left: $padding-side;
+    }
+  }
+
+}
+
+.modal__button {
+  margin-left: auto;
+  margin-right: auto;
+
+  &--failure {
+    margin-top: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 38px;
+    }
+  }
+
+  &--success {
+    margin-top: 19px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 44px;
+    }
+  }
+}
+
+.modal__button-wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  background-color: #f2f2f2;
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    height: 98px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    height: 146px;
+  }
+}
