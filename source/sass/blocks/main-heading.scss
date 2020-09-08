@@ -76,6 +76,10 @@
     @media (max-width: $mobile-width-only) {
       padding-top: 37px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 114px;
+    }
   }
 }
 

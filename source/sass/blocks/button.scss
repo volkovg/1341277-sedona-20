@@ -25,5 +25,10 @@
       width: 324px;
       padding-right: 11px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      padding-right: 0;
+    }
   }
 }
