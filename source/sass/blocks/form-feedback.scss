@@ -350,6 +350,8 @@
   }
 
   &--desktop {
+    padding-right: 0;
+
     @media (min-width: $desktop-width) {
       display: none;
     }

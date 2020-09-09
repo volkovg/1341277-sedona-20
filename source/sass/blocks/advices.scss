@@ -49,6 +49,8 @@
 }
 
 .advices__icon {
+  fill: $basic-half-backed;
+
   @media (max-width: $mobile-width-only) {
     position: absolute;
   }
