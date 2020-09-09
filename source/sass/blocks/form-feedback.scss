@@ -638,3 +638,10 @@
 .form-feedback__reminder-text {
   padding-bottom: 14px;
 }
+
+.form-feedback__button {
+  @media (max-width: $mobile-width-only) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

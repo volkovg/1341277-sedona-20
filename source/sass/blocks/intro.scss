@@ -18,6 +18,7 @@
   @media (min-width: $tablet-width) {
     min-height: 290px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
