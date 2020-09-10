@@ -12,18 +12,8 @@
   text-transform: uppercase;
   max-width: 1200px;
   margin: auto;
-}
 
-.page__body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  margin: 0;
-}
-
-.page__modal {
-  position: fixed;
-  left: 50%;
-  top: 300px;
-  transform: translate(-50%, -50%);
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }

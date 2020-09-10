@@ -13,7 +13,6 @@
     background-size: 768px;
   }
   background-position: 50% bottom;
-  z-index: 1;
 
   @media (min-width: $tablet-width) {
     min-height: 290px;
@@ -36,38 +35,6 @@
     }
   }
 
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    z-index: 2;
-    position: absolute;
-
-    height: 79px;
-    background-color: $basic-white;
-
-    @media (min-width: $tablet-width) {
-      top: 94%;
-      width: 25%;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 91%;
-    }
-  }
-
-  &::before {
-    right: 75%;
-    transform-origin: right;
-    transform: skewX(5deg) rotate(6deg);
-  }
-
-  &::after {
-    left: 75%;
-    transform-origin: left;
-    transform: skewX(-5deg) rotate(-6deg);
-  }
-
   &--index {
     min-height: 389px;
     background-size: cover;
@@ -83,18 +50,6 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/bg-back-desktop@2x.jpg");
-      }
-    }
-
-    &::before,
-    &::after {
-      @media (min-width: $tablet-width) {
-        top: 97%;
-        width: 25%;
-      }
-
-      @media (min-width: $desktop-width) {
-        top: 95%;
       }
     }
   }
@@ -124,31 +79,26 @@
   }
 }
 
-.intro__arrow-left,
-.intro__arrow-right {
-  z-index: 2;
+.intro__triangle {
   position: absolute;
-  top: 100%;
-  height: 79px;
-  background-color: $basic-white;
+  bottom: 0;
 
-  @media (max-width: $tablet-width) {
-    width: 50%;
+  @media (max-width: $mobile-width-only) {
+    bottom: -0.5px;
   }
+
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
-    width: 346px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
-}
 
-.intro__arrow-left {
-  right: 50%;
-  transform-origin: right;
-  transform: skewX(9deg) rotate(9deg);
-}
-
-.intro__arrow-right {
-  left: 50%;
-  transform-origin: left;
-  transform: skewX(-9deg) rotate(-9deg);
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
 }

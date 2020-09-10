@@ -1,0 +1,17 @@
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
+}
+
+.page-body__modal {
+  position: fixed;
+  left: 50%;
+  top: 300px;
+  transform: translate(-50%, -50%);
+}

@@ -1,5 +1,9 @@
 .hotel-search {
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
 }
 
 .hotel-search__title {
