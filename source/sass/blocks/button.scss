@@ -1,10 +1,11 @@
 .button {
   display: block;
   width: 280px;
-  height: 58px;
+  min-height: 58px;
   border: none;
   padding: 0;
   padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 21px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -32,8 +33,6 @@
   }
 
   &--send {
-    padding-top: 6px;
-
     @media (min-width: $tablet-width) {
       width: 324px;
       padding-right: 11px;
