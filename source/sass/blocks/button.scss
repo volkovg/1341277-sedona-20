@@ -18,6 +18,19 @@
     width: 458px;
   }
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba($basic-white, 0.3)
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+  }
+
   &--send {
     padding-top: 6px;
 
